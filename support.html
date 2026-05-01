@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Stellune</title>
+<style>
+:root {
+  --bg-deep: #0a0a1c;
+  --bg-mid: #14122e;
+  --gold: #f3cd72;
+  --starlight: #ebebff;
+  --stardust: rgba(255, 255, 255, 0.72);
+  --glass-stroke: rgba(255, 255, 255, 0.12);
+  --glass-fill: rgba(255, 255, 255, 0.05);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(180deg, var(--bg-deep), var(--bg-mid));
+  color: var(--starlight);
+  min-height: 100vh;
+  line-height: 1.7;
+  padding: 4rem 1.5rem;
+}
+.container { max-width: 760px; margin: 0 auto; }
+.brand {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--gold);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+h1 {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+.lede { color: var(--stardust); margin-bottom: 2.5rem; font-size: 1.05rem; }
+.contact-card {
+  background: var(--glass-fill);
+  border: 1px solid var(--glass-stroke);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.contact-card a {
+  font-size: 1.2rem;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+}
+h2 {
+  font-family: "Iowan Old Style", Georgia, serif;
+  color: var(--gold);
+  font-size: 1.3rem;
+  margin: 2rem 0 0.5rem;
+}
+p, ul { color: var(--stardust); margin-bottom: 1rem; }
+ul { padding-left: 1.5rem; }
+li { margin-bottom: 0.4rem; }
+a { color: var(--gold); }
+nav {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--glass-stroke);
+  text-align: center;
+}
+nav a { margin: 0 1rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="/" class="brand">Stellune</a>
+  <h1>Support</h1>
+  <p class="lede">Stellune is a small, single-developer app. We read every email and reply within a couple of days.</p>
+
+  <div class="contact-card">
+    <p style="margin-bottom: 0.5rem; color: var(--stardust);">Get in touch</p>
+    <a href="mailto:rehman013@gmail.com">rehman013@gmail.com</a>
+  </div>
+
+  <h2>FAQ</h2>
+
+  <h2>Why is the moon phase different from another app?</h2>
+  <p>Different apps use different reference epochs and rounding. Stellune computes the phase from the synodic month (29.530588 days) anchored to the 6 January 2000 new moon. On any given day the major apps usually agree to within a percent or two of illumination.</p>
+
+  <h2>Why are the sunrise/sunset times slightly off?</h2>
+  <p>Stellune's sun calculations are accurate to roughly one minute, using the standard "official" sunrise altitude (-0.833° to account for atmospheric refraction and the solar disc). If you see a difference of more than a minute or two from a trusted source, please email us with your location.</p>
+
+  <h2>Where do you get the cloud cover forecast?</h2>
+  <p>The optional stargazing forecast queries <a href="https://open-meteo.com">Open-Meteo</a>, a free, open-source weather API. We don't operate any servers ourselves.</p>
+
+  <h2>Where does the ISS pass data come from?</h2>
+  <p>Stellune ships with a recent ISS Two-Line Element set (TLE) from NORAD via celestrak.org and propagates it locally using a simplified SGP4 model. We refresh the bundled TLE at each app release. If passes look stale, check the App Store for an update.</p>
+
+  <h2>Can I turn off the astrology features?</h2>
+  <p>Stellune is a sky almanac first. The "Reading" tab with horoscope, sign profiles, and compatibility is entirely optional — you can ignore it forever and the app works fully as an astronomical reference.</p>
+
+  <h2>Does the watch app work without the iPhone?</h2>
+  <p>Yes. The watch app is fully standalone — it computes its own sunrise/sunset and moon phase. It reads location from a value the iPhone has saved, and falls back to a default city if it can't see one.</p>
+
+  <h2>I have a bug or feature request</h2>
+  <p>Please email <a href="mailto:rehman013@gmail.com">rehman013@gmail.com</a> with:</p>
+  <ul>
+    <li>iOS version (Settings → General → About)</li>
+    <li>Device model</li>
+    <li>What you saw vs. what you expected</li>
+    <li>Approximate location (city name is enough)</li>
+  </ul>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/privacy">Privacy</a>
+  </nav>
+</div>
+</body>
+</html>

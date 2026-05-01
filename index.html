@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stellune — Sky Almanac</title>
+<style>
+:root {
+  --bg-deep: #0a0a1c;
+  --bg-mid: #14122e;
+  --violet: #5a319e;
+  --pink: #c75ebd;
+  --gold: #f3cd72;
+  --starlight: #ebebff;
+  --stardust: rgba(255, 255, 255, 0.72);
+  --glass-stroke: rgba(255, 255, 255, 0.12);
+  --glass-fill: rgba(255, 255, 255, 0.05);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-mid) 50%, rgba(90,49,158,0.6) 100%);
+  color: var(--starlight);
+  min-height: 100vh;
+  line-height: 1.6;
+  padding: 4rem 1.5rem;
+}
+.container { max-width: 720px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 4rem; }
+h1 {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: 4rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--gold), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+.tagline {
+  font-size: 1.25rem;
+  color: var(--stardust);
+  font-style: italic;
+}
+.cards { display: grid; gap: 1.5rem; margin-bottom: 3rem; }
+.card {
+  background: var(--glass-fill);
+  border: 1px solid var(--glass-stroke);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+.card h2 {
+  font-family: "Iowan Old Style", Georgia, serif;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.card p { color: var(--stardust); }
+.features {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  margin: 2rem 0;
+}
+.feature {
+  background: var(--glass-fill);
+  border: 1px solid var(--glass-stroke);
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.feature strong { color: var(--gold); display: block; margin-bottom: 0.25rem; }
+@media (max-width: 600px) {
+  h1 { font-size: 3rem; }
+  .features { grid-template-columns: 1fr; }
+}
+nav {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--glass-stroke);
+}
+nav a {
+  color: var(--gold);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 0.9rem;
+}
+nav a:hover { text-decoration: underline; }
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--stardust);
+  font-size: 0.85rem;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Stellune</h1>
+    <p class="tagline">A quiet sky almanac for the modern stargazer.</p>
+  </header>
+
+  <div class="cards">
+    <div class="card">
+      <h2>Read the sky as it is.</h2>
+      <p>Stellune shows you exactly when the sun rises, sets, and twilight begins — and where the moon sits in its 29-day cycle. Computed on your device from your location, with no servers and no tracking.</p>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="feature"><strong>Today's Sky</strong>Sunrise, solar noon, sunset, day length, and three bands of twilight.</div>
+    <div class="feature"><strong>Live Compass</strong>Sun, moon, and five planets at their true azimuth — a rotating dial.</div>
+    <div class="feature"><strong>Lunar Calendar</strong>Every day's phase at a glance, navigable across months.</div>
+    <div class="feature"><strong>Stargazing Forecast</strong>Tonight's cloud cover and a clear-sky verdict.</div>
+    <div class="feature"><strong>ISS Overhead</strong>Visible passes only — sat in sunlight, observer in twilight.</div>
+    <div class="feature"><strong>Apple Watch</strong>Today's sky on your wrist. No phone required.</div>
+  </div>
+
+  <nav>
+    <a href="/support">Support</a>
+    <a href="/privacy">Privacy</a>
+    <a href="https://apps.apple.com/app/stellune">App Store</a>
+  </nav>
+
+  <footer>
+    © 2026 Stellune · Made for anyone who likes their sky calm, accurate, and unhurried.
+  </footer>
+</div>
+</body>
+</html>

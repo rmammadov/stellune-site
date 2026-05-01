@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Stellune</title>
+<style>
+:root {
+  --bg-deep: #0a0a1c;
+  --bg-mid: #14122e;
+  --gold: #f3cd72;
+  --starlight: #ebebff;
+  --stardust: rgba(255, 255, 255, 0.72);
+  --glass-stroke: rgba(255, 255, 255, 0.12);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(180deg, var(--bg-deep), var(--bg-mid));
+  color: var(--starlight);
+  min-height: 100vh;
+  line-height: 1.7;
+  padding: 4rem 1.5rem;
+}
+.container { max-width: 760px; margin: 0 auto; }
+.brand {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--gold);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+h1 {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+.updated { color: var(--stardust); font-size: 0.9rem; margin-bottom: 2.5rem; }
+h2 {
+  font-family: "Iowan Old Style", Georgia, serif;
+  color: var(--gold);
+  font-size: 1.4rem;
+  margin: 2.5rem 0 0.75rem;
+}
+p, ul { color: var(--stardust); margin-bottom: 1rem; }
+ul { padding-left: 1.5rem; }
+li { margin-bottom: 0.4rem; }
+a { color: var(--gold); }
+strong { color: var(--starlight); }
+nav {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--glass-stroke);
+  text-align: center;
+}
+nav a { margin: 0 1rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="/" class="brand">Stellune</a>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 2 May 2026</p>
+
+  <p>Stellune is a sky almanac that runs entirely on your device. This policy describes what data the app handles and how it is treated.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Nothing leaves your device by default.</strong> Stellune has no user accounts, no analytics SDKs, no third-party trackers, and no advertising identifiers. We do not collect, store, or transmit any personally identifiable information about you.</p>
+
+  <h2>Location data</h2>
+  <p>If you grant location permission, Stellune uses your latitude and longitude to compute accurate sunrise, sunset, twilight, and moonrise times. Your location:</p>
+  <ul>
+    <li>stays on your device,</li>
+    <li>is never transmitted to our servers (we do not operate any),</li>
+    <li>is shared only with the Apple Weather / Open-Meteo cloud-cover API <em>if and only if</em> you view the optional stargazing forecast card. The request includes only your latitude/longitude rounded to two decimal places — no identifier is sent.</li>
+  </ul>
+  <p>If you decline location permission, Stellune falls back to a default city you can change in Settings. The almanac still works.</p>
+
+  <h2>Notifications</h2>
+  <p>Notifications are scheduled on-device using <code>UNUserNotificationCenter</code>. We do not operate a push notification server. You can disable any or all notification categories from Settings.</p>
+
+  <h2>Cloud cover forecast (Open-Meteo)</h2>
+  <p>The optional stargazing forecast feature queries <a href="https://open-meteo.com">api.open-meteo.com</a>, a free weather API operated by a third party. Open-Meteo states that they do not log queries with personally identifiable information. See <a href="https://open-meteo.com/en/terms">Open-Meteo's terms</a>.</p>
+
+  <h2>App Store Connect</h2>
+  <p>If you download Stellune from the App Store, Apple may collect download and crash data per the <a href="https://www.apple.com/legal/privacy/en-ww/">Apple Privacy Policy</a>. We see only aggregate, anonymized data through App Store Connect — never individual user information.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Stellune is rated 4+ and is suitable for all ages. We do not knowingly collect any data from children, because we do not collect any data from anyone.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy as the app evolves. The "Last updated" date at the top reflects the most recent change. Material changes will be noted in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or your data: <a href="mailto:rehman013@gmail.com">rehman013@gmail.com</a></p>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/support">Support</a>
+  </nav>
+</div>
+</body>
+</html>
